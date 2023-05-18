@@ -29,13 +29,16 @@ public class EchoClient {
              BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in))) 
         {
 
-            System.out.println("Enter text to send to the server. Type 'quit' to close.");
+            String askForInputPrompt = "Enter text to send to the server. Type 'quit' to close: ";
+            System.out.println(askForInputPrompt);
             String userInput;
             
             while ((userInput = stdIn.readLine()) != null && !userInput.equals("quit")) 
             {
                 out.println(userInput);
                 System.out.println("server response: " + in.readLine());
+                System.out.println();
+                System.out.println(askForInputPrompt);
             }
         } 
         catch (UnknownHostException e) 
