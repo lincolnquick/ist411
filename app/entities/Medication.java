@@ -72,8 +72,7 @@ public class Medication {
 
     @Override
     public String toString() {
-        return "Medication: " +
-                "ID: " + id +
+        return "ID: " + id +
                 "\nDate: " + date +
                 "\nPrescription Name: " + prescriptionName +
                 "\nPrescribing Physician: " + prescribingPhysician +

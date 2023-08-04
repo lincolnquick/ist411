@@ -92,8 +92,7 @@ public class Record {
 
     @Override
     public String toString() {
-        return "Record: " +
-                "ID: "+ id +
+        return "ID: "+ id +
                 "\nDate: " + recordDate +
                 "\nDiagnostic Code: '" + diagnosticCode +
                 "\nDiagnosis: " + diagnosis +
