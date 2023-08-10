@@ -5,7 +5,7 @@
 ### Team 3 Members: James Swartz, Karl Rhinebolt, James Raynor, Max Lawson, Lincoln Quick
 
 ## Project Overview
-This project is a Medication Management System that offers both List View and Detail View functionalities. Users can view all medications, or they can select a specific medication by ID to view its details. It's part of the IST 411 course at Penn State University.
+This project is a Medication Management System named "Mediconnect" that offers both List View and Detail View functionalities. Users can view all medications, or they can select a specific medication by ID to view its details.
 
 ## Requirements
 - IntelliJ
