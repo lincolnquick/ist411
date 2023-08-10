@@ -6,13 +6,26 @@ import play.mvc.Result;
 import services.MedicationService;
 import java.util.List;
 
-
+/**
+ * Controller for handling medication-related actions.
+ */
 public class MedicationController extends Controller {
 
+    /**
+     * Retrieves a specific medication by its ID. Detail View.
+     *
+     * @param id The ID of the medication.
+     * @return A Result object with the medication details.
+     */
     public Result getMedication(int id) {
         return ok(views.html.DetailView.medication.render(MedicationService.getInstance().getMedication(id).toString()));
     }
 
+    /**
+     * Retrieves a list of all medications. List View.
+     *
+     * @return A Result object with the list of medications.
+     */
     public Result getMedications() {
         List<Medication> medications = MedicationService.getInstance().getAllMedications();
         String output = new String();
