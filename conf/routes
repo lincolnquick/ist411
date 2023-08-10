@@ -2,6 +2,10 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+# APIs in AccountController
+GET     /accounts                   controllers.AccountController.getAccounts()
+GET     /accounts/:id               controllers.AccountController.getAccount(id:Int)
+
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index()
 

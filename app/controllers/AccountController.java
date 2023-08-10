@@ -9,8 +9,9 @@ import play.mvc.Result;
 import java.util.List;
 
 import services.AccountService;
-import views.DetailView.*;
-import views.ListView.*;
+import views.html.DetailView.*;
+import views.html.ListView.*;
+
 
 public class AccountController extends Controller {
 
