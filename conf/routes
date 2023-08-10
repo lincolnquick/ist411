@@ -6,8 +6,13 @@
 GET     /accounts                   controllers.AccountController.getAccounts()
 GET     /accounts/:id               controllers.AccountController.getAccount(id:Int)
 
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+# APIs in MedicationController
+GET    /medications      controllers.MedicationController.getMedications()
+GET    /medications/:id  controllers.MedicationController.getMedication(id:Int)
+
+# Landing Page
+GET    /                controllers.MedicationController.index()
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
